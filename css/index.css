@@ -78,10 +78,16 @@ table {
   }
 
   /* Tablet */
-
   @media (max-width: 800px) {
       .container {
           width: 95%;
+      }
+  }
+
+  /* Phone */
+  @media (max-width: 500px) {
+      .container {
+          width: 100%;
       }
   }
   
@@ -99,7 +105,7 @@ table {
     nav {
         flex-wrap: wrap;
         text-align: center;
-        margin: 20px
+        margin: 20px;
     }
 
     nav a {
@@ -112,6 +118,19 @@ table {
         margin: 12px 0;
       }
   }
+
+   /* Phone */
+   @media (max-width: 500px) {
+    .nav-div nav a {
+        display: inline-block;
+          box-sizing: border-box;
+          width: 100%;
+          border-bottom: 1px solid grey;
+      }
+    nav a {
+        margin: 40px 0 0 0;
+    }
+  }
   
   nav a {
 	text-decoration: none;
@@ -122,7 +141,7 @@ table {
 	display: flex;
 	justify-content: space-around;
 	margin: 40px auto;
-	align-items: center;
+    align-items: center;
   }
 
   @media (max-width: 800px) {
@@ -188,11 +207,24 @@ table {
   .top-container {
 	width: 40%;
   }
+
+  /* Phone */
+  @media (max-width: 500px) {
+      .top-container {
+          width: 95%;
+      }
+  }
   
   .middle-img {
 	width: 95%;
 	margin: 20px;
   }
+
+  @media (max-width: 500px) {
+      .middle-img {
+        margin: 10px;
+      }
+    }
   
   .middle-bottom {
 	display: flex;
@@ -201,9 +233,27 @@ table {
 	margin: 20px;
   }
 
+  /* Phone */
+@media (max-width: 500px) {
+    .middle-top, .middle-bottom {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
   .bottom-container {
 	width: 30%;
   }
+
+  /* Phone */
+  @media (max-width: 500px) {
+    .bottom-container {
+        width: 95%;
+    }
+    .top-container {
+         margin: 10px;
+    }
+}
   
   .contact {
 	margin: 20px;
